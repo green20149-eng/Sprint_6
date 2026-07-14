@@ -1,13 +1,15 @@
-# Проект автоматизации сервиса «Самокат»
+# QA Scooter Automation
 
-## Используемые технологии
+Написаны Автотесты для сайта qa-scooter.education-services.ru
 
+Стек:
 - Python
 - Selenium WebDriver
-- Pytest
-- Page Object
+- pytest
+- Allure
 
-## Запуск тестов
+Запуск тестов с помощью команд:
 
-```bash
-pytest -v
+pip install -r requirements.txt
+pytest -v --alluredir=allure-results
+allure serve allure-results
